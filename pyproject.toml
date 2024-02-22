@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.0"
+version = "0.1.2"
 description = ""
 packages = [
   { include = "brain_games" },
@@ -11,6 +11,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 colorama = "^0.4.6"
+prompt = "^0.4.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"
