@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.2"
+version = "0.2.0"
 description = ""
 packages = [
   { include = "brain_games" },
@@ -18,7 +18,8 @@ pytest = "^8.0.0"
 flake8 = "^7.0.0"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain-games = "brain_games.scripts.brain_game:main"
+brain-even ="brain_games.scripts.brain_even:main"
 
 [build-system]
 requires = ["poetry-core"]
