@@ -1,9 +1,11 @@
 import prompt
 
 
+name_ask = prompt.string('May I have your name? ')
+user_name = [f'{name_ask}']
+
 def welcome_user():
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    print(f'Hello, {user_name[0]}!')
 
 
 def main():
