@@ -1,19 +1,38 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.2.9"
-description = ""
-packages = [
-  { include = "brain_games" },
+version = "0.2.91"
+description = "5 элементарных игр для твоего мозга"
+authors = [
+    "OLVOS <anhkrem@gmail.com>",
 ]
-authors = ["OLVOS <anhkrem@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/OLVOS/python-project-49"
+
+packages = [
+    { include = "brain_games" },
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    #"License :: OSI Approved :: Python Software Foundation License",
+    "Operating System :: POSIX",
+    "Programming Language :: Python",
+    "Topic :: Games/Entertainment :: Puzzle Games"
+]
+
+[tool.poetry.urls]
+#доп свяь с автором:
+"tg" = "https://t.me/olwos"
+"vk" = "https://vk.com/olvos"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 colorama = "^0.4.6"
 prompt = "^0.4.1"
 
-[tool.poetry.group.dev.dependencies]
+[tool.poetry.group.test.dependencies]
 pytest = "^8.0.0"
 flake8 = "^7.0.0"
 

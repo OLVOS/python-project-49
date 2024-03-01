@@ -1,10 +1,10 @@
 import sys
 sys.path.append('/home/python-project-49/brain_games')
-from engine import *
+from engine import welcome_user, game
 from random import randint
 
 
-gcd_rules = 'Find the greatest common divisor of given numbers.'
+progression_rules = 'What number is missing in the progression?'
 
 
 def progression_question_answer():
@@ -18,10 +18,10 @@ def progression_question_answer():
         step = randint(2, 9)
         pair_list = [str(i) for i in range(2, 200, step)]
 
-        progression_list = pair_list[step:step+10]
-        cut_list.append(progression_list)
+        prog_list = pair_list[step:step + 10]
+        cut_list.append(prog_list)
 
-        prog_char = [progression_list[step]]
+        prog_char = [prog_list[step]]
         replace_list.append(prog_char)
 
         count += 1
@@ -46,9 +46,8 @@ def progression_question_answer():
 
 def main():
     welcome_user()
-    game(gcd_rules, progression_question_answer())
+    game(progression_rules, progression_question_answer())
 
 
 if __name__ == '__main__':
     main()
-

@@ -1,6 +1,7 @@
 import sys
 sys.path.append('/home/python-project-49/brain_games')
-from engine import *
+sys.path.append('/home/python-project-49/brain_games/scripts')
+from engine import welcome_user, game
 from operator import add, sub, mul
 from random import choice, choices
 
@@ -33,4 +34,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

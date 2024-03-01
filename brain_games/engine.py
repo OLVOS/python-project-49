@@ -1,36 +1,37 @@
-from cli import *
+from cli import welcome_user, user_name
 import time
 
 
-def time_string(text, sec=0.1):
+def timer(text, sec=0.05):
     for char in text:
         print(char, end='', flush=True)
         time.sleep(sec)
 
 
-def game(rules, def_question_answer):
+def game(rules, que_ans):
     current_correct_answer = 0
 
-    time_string(rules, sec=0.05)
+    timer(rules)
     time.sleep(1)
 
-    quest_ans_list = def_question_answer
-    for i, num in enumerate(quest_ans_list):
+    for i, num in enumerate(que_ans):
         if current_correct_answer != 3:
 
-            time_string(f'\nQuestion: {quest_ans_list[i]["question"]}')
-            user_answer = input('\nYour answer: ')
+            timer(f'\nQuestion: {que_ans[i]["question"]}')
+            usr_ans = input('\nYour answer: ')
 
-            if user_answer == quest_ans_list[i]["answer"]:
-                time_string('Correct!')
+            if usr_ans == que_ans[i]["answer"]:
+                timer('Correct!')
                 current_correct_answer += 1
             else:
-                time_string(f'"{user_answer}" is wrong answer ;(. Correct answer was "{quest_ans_list[i]["answer"]}".\n', sec=0.05)
-                time_string(f'Let\'s try again, {user_name[0]}!')
+                txt = " is wrong answer ;(. Correct answer was "
+
+                timer(f'"{usr_ans}"{txt}"{que_ans[i]["answer"]}".\n', sec=0.05)
+                timer(f'Let\'s try again, {user_name[0]}!')
                 time.sleep(1)
 
     time.sleep(1)
-    time_string(f'\nCongratulations, {user_name[0]}!\n')
+    timer(f'\nCongratulations, {user_name[0]}!\n')
 
 
 def main():
@@ -40,4 +41,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
