@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.2.91"
+version = "0.2.92"
 description = "5 элементарных игр для твоего мозга"
 authors = [
     "OLVOS <anhkrem@gmail.com>",
@@ -37,9 +37,7 @@ pytest = "^8.0.0"
 flake8 = "^7.0.0"
 
 [tool.poetry.scripts]
-#зачем я существую?
 brain-games = "brain_games.brain_game:main"
-#games
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
