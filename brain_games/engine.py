@@ -25,8 +25,7 @@ def game(rules, def_question_answer):
                 time_string('Correct!')
                 current_correct_answer += 1
             else:
-                time_string(
-                    f'"{user_answer}" is wrong answer ;(. Correct answer was "{quest_ans_list[i]["answer"]}".\n')
+                time_string(f'"{user_answer}" is wrong answer ;(. Correct answer was "{quest_ans_list[i]["answer"]}".\n', sec=0.05)
                 time_string(f'Let\'s try again, {user_name[0]}!')
                 time.sleep(1)
 
