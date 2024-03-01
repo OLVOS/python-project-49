@@ -1,10 +1,10 @@
 import sys
 sys.path.append('/home/python-project-49/brain_games/scripts')
-from brain_progression import main
+import brain_progression
 
 
 def run():
-    main()
+    brain_progression.main()
 
 
 if __name__ == '__main__':

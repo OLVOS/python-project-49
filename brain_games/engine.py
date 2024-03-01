@@ -9,24 +9,25 @@ def timer(text, sec=0.05):
 
 
 def game(rules, que_ans):
-    current_correct_answer = 0
-
     timer(rules)
     time.sleep(1)
 
+    correct_ans = 0
     for i, num in enumerate(que_ans):
-        if current_correct_answer != 3:
+        que = que_ans[i]["question"]
+        ans = que_ans[i]["answer"]
+        wrong_txt = "is wrong answer ;(. Correct answer was"
 
-            timer(f'\nQuestion: {que_ans[i]["question"]}')
+        if correct_ans != 3:
+            timer(f'\nQuestion: {que}')
             usr_ans = input('\nYour answer: ')
 
-            if usr_ans == que_ans[i]["answer"]:
+            if usr_ans == ans:
                 timer('Correct!')
-                current_correct_answer += 1
-            else:
-                txt = " is wrong answer ;(. Correct answer was "
+                correct_ans += 1
 
-                timer(f'"{usr_ans}"{txt}"{que_ans[i]["answer"]}".\n', sec=0.05)
+            else:
+                timer(f'"{usr_ans}" {wrong_txt} "{ans}".\n', sec=0.05)
                 timer(f'Let\'s try again, {user_name[0]}!')
                 time.sleep(1)
 
@@ -41,3 +42,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

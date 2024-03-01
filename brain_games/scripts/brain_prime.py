@@ -9,11 +9,11 @@ prime_rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def prime_question_answer():
     result = []
+    rnd_nums = [choice(range(2, 100)) for i in range(50)]
 
-    num_list = [choice(range(2, 100)) for i in range(50)]
-
-    for index, number in enumerate(num_list):
+    for index, number in enumerate(rnd_nums):
         dividers = [i for i in range(2, number)]
+
         for ind, num in enumerate(dividers):
 
             if number % num == 0:
