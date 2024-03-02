@@ -14,7 +14,6 @@ def game(rules, que_ans):
 
         if usr_ans == ans:
             print('Correct!')
-            correct_ans += 1
 
         else:
             print(f'"{usr_ans}" {wrong_txt} "{ans}".\n'
