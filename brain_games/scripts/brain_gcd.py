@@ -1,4 +1,4 @@
-from brain_games.engine import welcome_user, game
+from brain_games.engine import game
 from math import gcd
 from random import choices
 
@@ -23,7 +23,6 @@ def gcd_question_answer():
 
 
 def main():
-    welcome_user()
     game(gcd_rules, gcd_question_answer())
 
 

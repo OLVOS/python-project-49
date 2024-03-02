@@ -1,4 +1,4 @@
-from brain_games.engine import welcome_user, game
+from brain_games.engine import game
 from random import choice
 
 
@@ -29,7 +29,6 @@ def prime_question_answer():
 
 
 def main():
-    welcome_user()
     game(prime_rules, prime_question_answer())
 
 

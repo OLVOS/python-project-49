@@ -1,4 +1,4 @@
-from brain_games.engine import welcome_user, game
+from brain_games.engine import game
 from random import randint
 
 
@@ -37,7 +37,6 @@ def progression_question_answer():
 
 
 def main():
-    welcome_user()
     game(progression_rules, progression_question_answer())
 
 

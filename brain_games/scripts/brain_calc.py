@@ -1,4 +1,4 @@
-from brain_games.engine import welcome_user, game
+from brain_games.engine import game
 from operator import add, sub, mul
 from random import choice, choices
 
@@ -25,7 +25,6 @@ def calc_question_answer():
 
 
 def main():
-    welcome_user()
     game(calc_rules, calc_question_answer())
 
 
