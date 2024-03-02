@@ -19,7 +19,7 @@ def game(rules, que_ans):
                 correct_ans += 1
 
             else:
-                print(f'"{usr_ans}" {wrong_txt} "{ans}".'
+                print(f'"{usr_ans}" {wrong_txt} "{ans}".\n'
                       f'Let\'s try again, {user_name[0]}!')
 
     print(f'Congratulations, {user_name[0]}!')
