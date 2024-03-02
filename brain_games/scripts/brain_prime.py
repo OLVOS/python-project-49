@@ -1,5 +1,3 @@
-#import sys
-#sys.path.append('/home/python-project-49/brain_games')
 from brain_games.engine import welcome_user, game
 from random import choice
 

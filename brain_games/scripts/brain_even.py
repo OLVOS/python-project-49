@@ -1,5 +1,3 @@
-#import sys
-#sys.path.append('/home/python-project-49/brain_games')
 from brain_games.engine import welcome_user, game
 from random import choice
 
@@ -22,7 +20,7 @@ def even_question_answer():
 
 def main():
     welcome_user()
-    game(evem_rules, even_question_answer())
+    game(even_rules, even_question_answer())
 
 
 if __name__ == '__main__':
