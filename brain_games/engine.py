@@ -1,4 +1,4 @@
-from cli import welcome_user, user_name
+from brain_games.cli import welcome_user, user_name
 import time
 
 

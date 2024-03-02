@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-# добавляю cli в sys.path
-import sys
-sys.path.append('/home/python-project-49/brain_games')
-from cli import welcome_user
+#import sys
+#sys.path.append('/home/python-project-49/brain_games')
+from brain_games.cli import welcome_user
 
 
 def main():

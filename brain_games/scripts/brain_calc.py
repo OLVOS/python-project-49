@@ -1,7 +1,7 @@
-import sys
-sys.path.append('/home/python-project-49/brain_games')
-sys.path.append('/home/python-project-49/brain_games/scripts')
-from engine import welcome_user, game
+#import sys
+#sys.path.append('/home/python-project-49/brain_games')
+#sys.path.append('/home/python-project-49/brain_games/scripts')
+from brain_games.engine import welcome_user, game
 from operator import add, sub, mul
 from random import choice, choices
 
