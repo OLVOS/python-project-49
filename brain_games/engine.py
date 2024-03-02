@@ -1,16 +1,8 @@
 from brain_games.cli import welcome_user, user_name
-import time
-
-
-def timer(text, sec=0.05):
-    for char in text:
-        print(char, end='', flush=True)
-        time.sleep(sec)
 
 
 def game(rules, que_ans):
-    timer(rules)
-    time.sleep(1)
+    print(rules)
 
     correct_ans = 0
     for i, num in enumerate(que_ans):
@@ -19,20 +11,18 @@ def game(rules, que_ans):
         wrong_txt = "is wrong answer ;(. Correct answer was"
 
         if correct_ans != 3:
-            timer(f'\nQuestion: {que}')
-            usr_ans = input('\nYour answer: ')
+            print(f'Question: {que}')
+            usr_ans = input('Your answer: ')
 
             if usr_ans == ans:
-                timer('Correct!')
+                print('Correct!')
                 correct_ans += 1
 
             else:
-                timer(f'"{usr_ans}" {wrong_txt} "{ans}".\n', sec=0.05)
-                timer(f'Let\'s try again, {user_name[0]}!')
-                time.sleep(1)
+                print(f'"{usr_ans}" {wrong_txt} "{ans}".'
+                      f'Let\'s try again, {user_name[0]}!')
 
-    time.sleep(1)
-    timer(f'\nCongratulations, {user_name[0]}!\n')
+    print(f'Congratulations, {user_name[0]}!')
 
 
 def main():
