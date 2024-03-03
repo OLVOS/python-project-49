@@ -19,7 +19,6 @@ def even_question_answer():
 
 
 def main():
-    welcome_user()
     game(even_rules, even_question_answer())
 
 
