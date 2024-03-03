@@ -18,9 +18,8 @@ def game(rules, que_ans):
             if usr_ans == ans:
                 print('Correct!')
                 correct += 1
-
             else:
                 print(f'"{usr_ans}" {wrong_txt} "{ans}".\n'
                       f'Let\'s try again, {user_name[0]}!')
-
+                return
     print(f'Congratulations, {user_name[0]}!')
