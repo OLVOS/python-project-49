@@ -1,4 +1,4 @@
-from brain_games.engine import welcome_user, game
+from brain_games.engine import game
 from random import choice
 
 
