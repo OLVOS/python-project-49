@@ -7,7 +7,7 @@ gcd_rules = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd_question_answer():
-    pair_list = [choices(range(2, 100, 6), k=2) for i in range(20)]
+    pair_list = [choices(range(2, 100, 6), k=2) for i in range(3)]
     sets = []
 
     for i, num in enumerate(pair_list):

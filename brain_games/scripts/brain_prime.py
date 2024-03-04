@@ -7,7 +7,7 @@ prime_rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def prime_question_answer():
     result = []
-    rnd_nums = [choice(range(2, 100)) for i in range(50)]
+    rnd_nums = [choice(range(2, 100)) for i in range(3)]
 
     for index, number in enumerate(rnd_nums):
         dividers = [i for i in range(2, number)]

@@ -6,7 +6,7 @@ even_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def even_question_answer():
-    pair_list = [choice(range(50)) for i in range(20)]
+    pair_list = [choice(range(1, 50)) for i in range(3)]
     sets = []
 
     for i in pair_list:
