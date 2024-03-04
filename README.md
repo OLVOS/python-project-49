@@ -3,9 +3,10 @@
 
 ### бэйджик проекта в markdown:
 [![Maintainability](https://api.codeclimate.com/v1/badges/5feb2538fa6db2eab02c/maintainability)](https://codeclimate.com/github/OLVOS/python-project-49/maintainability)
+___
 
 # ОПИСАНИЕ ИГРЫ
-Brain-games - это 5 элементарных игр, в которых нужно дать 3 правильных ответа, а за неправильный - начать заново. Не смотря на визуальную простоту, иногда есть над чем подумать вашему мозгу :D
+**Brain-games** - это 5 элементарных игр, в которых нужно дать 3 правильных ответа, а за неправильный - начать заново. Не смотря на визуальную простоту, иногда есть над чем подумать вашему мозгу :blush:
 
 # МИНИМАЛЬНЫЕ ТРЕБОВАНИЯ:
 - python ^3.10.12
@@ -13,18 +14,26 @@ Brain-games - это 5 элементарных игр, в которых нуж
 
 # УСТАНОВКА И ЗАПУСК:
 ### УСТАНОВКА
-Для того, чтобы установить игру, воспользуйтесь командой 'python3 -m pip install --user git+https://github.com/OLVOS/python-project-49'
+> Для того, чтобы установить игру, воспользуйтесь командой:
+```
+python3 -m pip install --user git+https://github.com/OLVOS/python-project-49
+```
 
 ### ЗАПУСК
-Для того, чтобы запустить игру, воспользуйтесь командой:
-'brain_games_run' 
+> Для того, чтобы запустить игру, воспользуйтесь командой:
+```
+brain-games-run
+```
 
-Для того, чтобы запустить отдельно каждую из игр, воспользуйтесь следующими командами:
-'brain-even'
-'brain-calc'
-'brain-gcd'
-'brain-progression'
-'brain-prime'
+> Для того, чтобы запустить отдельно каждую из игр, воспользуйтесь следующими командами:
+```
+brain-even
+brain-calc
+brain-gcd
+brain-progression
+brain-prime
+```
+___
 
 # asciinema:
 ### asciinema проекта hexlet-code-0.2.95 (brain-even)
