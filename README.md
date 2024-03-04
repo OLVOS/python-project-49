@@ -28,9 +28,17 @@ brain-games-run
 > Для того, чтобы запустить отдельно каждую из игр, воспользуйтесь следующими командами:
 ```
 brain-even
+```
+```
 brain-calc
+```
+```
 brain-gcd
+```
+```
 brain-progression
+```
+```
 brain-prime
 ```
 ___
