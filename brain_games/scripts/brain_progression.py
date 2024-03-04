@@ -7,7 +7,7 @@ progression_rules = 'What number is missing in the progression?'
 
 def progr_and_char():
     progr_lst = []
-    char_in_nums_list = []
+    char_in_progr_list = []
 
     for _ in range(3):
         step = randint(2, 9)
@@ -15,8 +15,9 @@ def progr_and_char():
         range2 = (range1 + (step * 10))
 
         progr_lst += [[str(i) for i in range(range1, range2, step)]]
-        char_in_nums_list += [progr_lst[_][step]]
-    return {'progr_lst': progr_lst, 'char_in_nums_list': char_in_nums_list}
+        char_in_progr_list += [progr_lst[_][step]]
+
+    return {'progr_lst': progr_lst, 'char_in_progr_lst': char_in_progr_list}
 
 
 def progr_cipher(progr_char):
@@ -39,7 +40,7 @@ def progr_question_answer(progr_char):
         result.append(
             {
                 "question": ' '.join(progr_char['progr_lst'][j]),
-                "answer": progr_char['char_in_nums_list'][j]
+                "answer": progr_char['char_in_progr_lst'][j]
             }
         )
     return result
