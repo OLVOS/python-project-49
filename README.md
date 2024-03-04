@@ -26,14 +26,14 @@ Brain-games - это 5 элементарных игр, в которых нуж
 <brain-progression>
 <brain-prime>
 
-### asciinema:
-# asciinema проекта hexlet-code-0.2.95 (brain-even)
+# asciinema:
+### asciinema проекта hexlet-code-0.2.95 (brain-even)
 (https://asciinema.org/a/b3u5vPVvDQqAcIbMsJmJF6jaz)
-# asciinema проекта hexlet-code-0.2.95 (brain-calc)
+### asciinema проекта hexlet-code-0.2.95 (brain-calc)
 (https://asciinema.org/a/8z1lsgknWsLu35jnAr1crBXbR)
-# asciinema проекта hexlet-code-0.2.95 (brain-gcd)
+### asciinema проекта hexlet-code-0.2.95 (brain-gcd)
 (https://asciinema.org/a/bnIzX3xAsungpH7IaYxH3ybMg)
-# asciinema проекта hexlet-code-0.2.95 (brain-progression)
+### asciinema проекта hexlet-code-0.2.95 (brain-progression)
 (https://asciinema.org/a/pb7HtXiHNU6q3BYYDYWzAHFDF)
-# asciinema проекта hexlet-code-0.2.95 (brain-prime)
+### asciinema проекта hexlet-code-0.2.95 (brain-prime)
 (https://asciinema.org/a/erTW40cgyaludGeG1ia1PlDKi)
