@@ -5,40 +5,49 @@ from random import randint
 progression_rules = 'What number is missing in the progression?'
 
 
-def progression_question_answer():
-    result = []
-    slice_list = []
-    char_list = []
+def progr_and_char():
+    progr_lst = []
+    char_in_nums_list = []
 
-    count_prog = 0
-    while count_prog < 20:
+    for _ in range(3):
         step = randint(2, 9)
-        rnd_nums = [str(i) for i in range(2, 200, step)]
+        range1 = randint(2, 100)
 
-        slice_list += [rnd_nums[step:step + 10]]
-        char_list += [slice_list[count_prog][step]]
+        progr_lst += [[str(i) for i in range(range1, (range1 + (step * 10)), step)]]
+        char_in_nums_list += [progr_lst[_][step]]
+    return {'progr_lst': progr_lst, 'char_in_nums_list': char_in_nums_list}
 
-        count_prog += 1
 
-    for index, item in enumerate(slice_list):
-        for ind, it in enumerate(item):
-            if it == char_list[index]:
-                slice_list[index][ind] = '..'
+def progr_cipher(progr_char):
+    for _, char in enumerate(progr_char['char_in_nums_list']):
+        for index, item in enumerate(progr_char['progr_lst'][_]):
+            if char == item:
+                progr_char['progr_lst'][_][index] = '..'
+                break
+    return progr_char
 
-    for j, number in enumerate(slice_list):
+
+def progr_question_answer(progr_char):
+    result = []
+
+    for j, number in enumerate(progr_char['progr_lst']):
         result.append(
             {
-                "question": ' '.join(slice_list[j]),
-                "answer": char_list[j]
+                "question": ' '.join(progr_char['progr_lst'][j]),
+                "answer": progr_char['char_in_nums_list'][j]
             }
         )
-
     return result
 
 
+def progr_final():
+    return progr_question_answer(progr_cipher(progr_and_char()))
+
+
 def main():
-    game(progression_rules, progression_question_answer())
+    game(progression_rules, progr_final())
 
 
 if __name__ == '__main__':
     main()
+
