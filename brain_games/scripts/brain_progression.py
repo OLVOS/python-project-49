@@ -12,18 +12,23 @@ def progr_and_char():
     for _ in range(3):
         step = randint(2, 9)
         range1 = randint(2, 100)
+        range2 = (range1 + (step * 10))
 
-        progr_lst += [[str(i) for i in range(range1, (range1 + (step * 10)), step)]]
+        progr_lst += [[str(i) for i in range(range1, range2, step)]]
         char_in_nums_list += [progr_lst[_][step]]
     return {'progr_lst': progr_lst, 'char_in_nums_list': char_in_nums_list}
 
 
 def progr_cipher(progr_char):
-    for _, char in enumerate(progr_char['char_in_nums_list']):
-        for index, item in enumerate(progr_char['progr_lst'][_]):
+    progr_lst = progr_char['progr_lst']
+    char_in_progr_lst = progr_char['char_in_progr_lst']
+
+    for _, char in enumerate(char_in_progr_lst):
+        for index, item in enumerate(progr_lst[_]):
             if char == item:
-                progr_char['progr_lst'][_][index] = '..'
+                progr_lst[_][index] = '..'
                 break
+
     return progr_char
 
 
@@ -50,4 +55,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
