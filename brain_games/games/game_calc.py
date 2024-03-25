@@ -4,7 +4,7 @@ from random import choice, choices
 
 
 def get_question_and_answer():
-    pair_list = [choices(range(50), k=2) for i in range(20)]
+    pair_list = [choices(range(50), k=2) for i in range(3)]
     sets = []
 
     for i, num in enumerate(pair_list):
