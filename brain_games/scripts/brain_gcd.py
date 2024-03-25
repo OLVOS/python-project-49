@@ -1,29 +1,9 @@
-from brain_games.engine import game
-from math import gcd
-from random import choices
-
-
-gcd_rules = 'Find the greatest common divisor of given numbers.'
-
-
-def gcd_question_answer():
-    pair_list = [choices(range(2, 100, 6), k=2) for i in range(3)]
-    sets = []
-
-    for i, num in enumerate(pair_list):
-        first, second = pair_list[i][0], pair_list[i][1]
-
-        sets.append(
-            {
-                "question": ''.join([f'{first} {second}']),
-                "answer": str(gcd(first, second))
-            }
-        )
-    return sets
+#!/usr/bin/env python3
+from brain_games.games.game_gcd import run_game_gcd
 
 
 def main():
-    game(gcd_rules, gcd_question_answer())
+    run_game_gcd()
 
 
 if __name__ == '__main__':

@@ -1,25 +1,9 @@
-from brain_games.engine import game
-from random import choice
-
-
-even_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
-
-
-def even_question_answer():
-    pair_list = [choice(range(1, 50)) for i in range(3)]
-    sets = []
-
-    for i in pair_list:
-        if i % 2 == 0:
-            sets.append({"question": i, "answer": 'yes'})
-        else:
-            sets.append({"question": i, "answer": 'no'})
-
-    return sets
+#!/usr/bin/env python3
+from brain_games.games.game_even import run_game_even
 
 
 def main():
-    game(even_rules, even_question_answer())
+    run_game_even()
 
 
 if __name__ == '__main__':

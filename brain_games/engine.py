@@ -1,25 +1,22 @@
-from brain_games.cli import welcome_user, user_name
 
-
-def game(rules, que_ans):
-    welcome_user()
+def run_game(rules, get_answer_and_question):
+    name = input('Welcome to the Brain Games!\n'
+                 'May I have your name? ')
+    print(f'Hello, {name}!')
     print(rules)
 
-    for i, num in enumerate(que_ans):
-        que = que_ans[i]["question"]
-        ans = que_ans[i]["answer"]
+    for attempt_index, el in enumerate(get_answer_and_question):
+        question, correct_answer = get_answer_and_question[attempt_index]
 
-        print(f'Question: {que}')
-        usr_ans = input('Your answer: ')
-
-        if usr_ans == ans:
+        print('Question:', question)
+        user_answer = input('Answer: ')
+        if user_answer == correct_answer:
             print('Correct!')
-
         else:
-            print(f'"{usr_ans}" '
+            print(f'"{user_answer}" '
                   ' is wrong answer ;(. Correct answer was '
-                  f'"{ans}".\n'
-                  f'Let\'s try again, {user_name[0]}!')
+                  f'"{correct_answer}".\n'
+                  f'Let\'s try again, {name}!')
             return
 
-    print(f'Congratulations, {user_name[0]}!')
+    print(f'Congratulations, {name}!')
