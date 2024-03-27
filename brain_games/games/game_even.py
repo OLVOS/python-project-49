@@ -7,7 +7,7 @@ def get_rand_int():
     return randint(1, 100)
 
 
-def get_num_and_res():
+def get_question_and_answer():
     res = []
     for i in range(3):
         quest = get_rand_int()
@@ -18,4 +18,4 @@ def get_num_and_res():
 
 
 def run_game_even():
-    run_game(EVEN_RULES, get_num_and_res())
+    run_game(EVEN_RULES, get_question_and_answer())

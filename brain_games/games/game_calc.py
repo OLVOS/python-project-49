@@ -4,22 +4,22 @@ from random import choice, choices
 
 
 def get_question_and_answer():
-    pair_list = [choices(range(50), k=2) for i in range(3)]
-    sets = []
+    res = []
 
-    for i, num in enumerate(pair_list):
+    get_list = [choices(range(50), k=2) for i in range(3)]
+    for i, num in enumerate(get_list):
         op = choice(OPERANDS)
 
-        first, second = pair_list[i][0], pair_list[i][1]
+        first, second = get_list[i][0], get_list[i][1]
 
-        sets.append(
+        res.append(
             [
                 ''.join([f'{first} {op[1]} {second}']),
                 str(op[0](first, second))
             ]
         )
 
-    return sets
+    return res
 
 
 def run_game_calc():

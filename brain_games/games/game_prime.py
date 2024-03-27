@@ -3,36 +3,36 @@ from brain_games.consts import PRIME_RULES
 from random import choice
 
 
-def dividers_list(number):
-    dividers = []
-    for index, number in enumerate(number):
-        dividers.append([i for i in range(2, number)])
-    return dividers
+def get_divisors_of_num(num):
+    res = []
+    for number in num:
+        res.append([i for i in range(2, number)])
+    return res
 
 
-def prime_question_answer(dividers_lst):
-    result = []
+def get_question_and_answer(divisors):
+    res = []
 
-    rnd_nums = [choice(range(2, 100)) for i in range(3)]
-    dividers = dividers_lst(rnd_nums)
+    num = [choice(range(2, 100)) for i in range(3)]
+    div = divisors(num)
 
-    for index, number in enumerate(rnd_nums):
-        for i, num in enumerate(dividers[index]):
-            last_number = dividers[index][-1]
-            current_div = dividers[index][i]
+    for index, number in enumerate(num):
+        for i, num in enumerate(div[index]):
+            prime_num = div[index][-1]
+            current_div = div[index][i]
 
             if number % current_div == 0:
-                result.append([number, 'no'])
+                res.append([number, 'no'])
+                break
+            elif current_div == prime_num:
+                res.append([number, 'yes'])
                 break
 
-            elif current_div == last_number:
-                result.append([number, 'yes'])
-                break
-    return result
+    return res
 
 
 def prime_final():
-    return prime_question_answer(dividers_list)
+    return get_question_and_answer(get_divisors_of_num)
 
 
 def run_game_prime():

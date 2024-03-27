@@ -5,19 +5,19 @@ from random import choices
 
 
 def get_question_and_answer():
-    pair_list = [choices(range(2, 100, 6), k=2) for i in range(3)]
-    sets = []
+    res = []
 
-    for i, num in enumerate(pair_list):
-        first, second = pair_list[i][0], pair_list[i][1]
+    get_list = [choices(range(2, 100, 6), k=2) for i in range(3)]
+    for i, num in enumerate(get_list):
+        first, second = get_list[i][0], get_list[i][1]
 
-        sets.append(
+        res.append(
             [
                 ''.join([f'{first} {second}']),
                 str(gcd(first, second))
             ]
         )
-    return sets
+    return res
 
 
 def run_game_gcd():
