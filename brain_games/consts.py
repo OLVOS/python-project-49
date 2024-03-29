@@ -7,4 +7,6 @@ GCD_RULES = 'Find the greatest common divisor of given numbers.'
 PROGRESSION_RULES = 'What number is missing in the progression?'
 PRIME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+AMOUNT_OF_ROUDS = 3
+
 OPERANDS = [[add, '+'], [sub, '-'], [mul, '*']]
