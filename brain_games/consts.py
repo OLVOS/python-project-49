@@ -10,3 +10,4 @@ PRIME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 AMOUNT_OF_ROUDS = 3
 
 OPERANDS = [[add, '+'], [sub, '-'], [mul, '*']]
+MATH_SIGNS = ['+', '-', '*']

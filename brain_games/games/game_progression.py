@@ -5,48 +5,33 @@ from random import randint
 
 def get_progr_and_char():
     progr_lst = []
-    char_in_progr_list = []
-
-    for _ in range(3):
+    cipher_char_in_progr = []
+    for _ in range(1):
         step = randint(2, 9)
         range1 = randint(2, 100)
         range2 = (range1 + (step * 10))
 
-        progr_lst += [[str(i) for i in range(range1, range2, step)]]
-        char_in_progr_list += [progr_lst[_][step]]
+        progr_lst += [str(i) for i in range(range1, range2, step)]
+        cipher_char_in_progr += [progr_lst[step]]
+    return [progr_lst, cipher_char_in_progr]
 
-    return {'progr_lst': progr_lst, 'char_in_progr_lst': char_in_progr_list}
 
-
-def get_cipher(progr_char):
-    progr_lst = progr_char['progr_lst']
-    char_in_progr_lst = progr_char['char_in_progr_lst']
-
-    for _, char in enumerate(char_in_progr_lst):
-        for index, item in enumerate(progr_lst[_]):
-            if char == item:
-                progr_lst[_][index] = '..'
+def get_cipher():
+    get_list = get_progr_and_char()
+    res = [item for index, item in enumerate(get_list[0])]
+    for index, item in enumerate(get_list[0]):
+        for i in get_list[1]:
+            if item == i:
+                get_list[0][index] = '..'
                 break
-
-    return progr_char
-
-
-def get_question_and_answer(progr_char):
-    result = []
-
-    for j, number in enumerate(progr_char['progr_lst']):
-        result.append(
-            [
-                ' '.join(progr_char['progr_lst'][j]),
-                progr_char['char_in_progr_lst'][j]
-            ]
-        )
-    return result
+    return get_list
 
 
-def progr_final():
-    return get_question_and_answer(get_cipher(get_progr_and_char()))
+def get_format_progression():
+    get_progr = get_cipher()
+    res = [" ".join(i) for i in get_progr]
+    return res
 
 
 def run_game_progression():
-    run_game(PROGRESSION_RULES, progr_final())
+    run_game(PROGRESSION_RULES, get_format_progression)

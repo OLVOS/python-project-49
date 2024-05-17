@@ -7,11 +7,10 @@ def run_game(rules, get_answer_and_question):
                          'May I have your name? ')
     print(f'Hello, {name}!\n', rules)
 
-    for attempt_index in range(AMOUNT_OF_ROUDS):
-        question, correct_answer = get_answer_and_question[attempt_index]
-
+    for i in range(AMOUNT_OF_ROUDS):
+        question, correct_answer = get_answer_and_question()
         print('Question:', question)
-        user_answer = input('Answer: ')
+        user_answer = prompt.string('Answer: ')
 
         if user_answer == correct_answer:
             print('Correct!')
@@ -20,6 +19,7 @@ def run_game(rules, get_answer_and_question):
                   ' is wrong answer ;(. Correct answer was '
                   f'"{correct_answer}".\n'
                   f'Let\'s try again, {name}!')
-            break
+            return
 
-    print(f'Congratulations, {name}!')
+    if AMOUNT_OF_ROUDS:
+        print(f'Congratulations, {name}!')
