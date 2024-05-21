@@ -4,10 +4,10 @@ from random import choice
 
 
 def get_divisors_for_num(number):
-    return [i for i in range(2, number+1)]
+    return [i for i in range(2, number + 1)]
 
 
-def get_answer_for_prime_by_num():
+def get_num_and_prime_status():
     answer = ''
     num = choice(range(2, 100))
     list_nums_before_num = get_divisors_for_num(num)
@@ -23,4 +23,4 @@ def get_answer_for_prime_by_num():
 
 
 def run_game_prime():
-    run_game(PRIME_RULES, get_answer_for_prime_by_num)
+    run_game(PRIME_RULES, get_num_and_prime_status)

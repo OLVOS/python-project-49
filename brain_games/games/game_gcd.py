@@ -4,7 +4,7 @@ from math import gcd
 from random import choice
 
 
-def get_question_and_answer():
+def get_two_nums_and_divisor():
     get_nums_1 = choice(range(2, 100, 6))
     get_nums_2 = choice(range(2, 100, 6))
     res = [f'{get_nums_1} {get_nums_2}', str(gcd(get_nums_1, get_nums_2))]
@@ -12,4 +12,4 @@ def get_question_and_answer():
 
 
 def run_game_gcd():
-    run_game(GCD_RULES, get_question_and_answer)
+    run_game(GCD_RULES, get_two_nums_and_divisor)

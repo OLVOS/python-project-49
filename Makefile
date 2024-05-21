@@ -27,11 +27,6 @@ lint:
 selfcheck:
 	poetry check
 
-check: selfcheck test lint
-
-#
-.PHONY: install test lint selfcheck check build
-
 #my make:
 #
 brain-games:

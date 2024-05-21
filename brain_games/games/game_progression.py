@@ -8,7 +8,7 @@ def get_format_progression(lst):
     return res
 
 
-def get_progr_and_char():
+def get_progr_and_cipher_char():
     step = randint(2, 9)
     range1 = randint(2, 20)
     range2 = (range1 + (step * 10))
@@ -24,4 +24,4 @@ def get_progr_and_char():
 
 
 def run_game_progression():
-    run_game(PROGRESSION_RULES, get_progr_and_char)
+    run_game(PROGRESSION_RULES, get_progr_and_cipher_char)
