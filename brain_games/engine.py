@@ -1,5 +1,5 @@
 import prompt
-from consts import AMOUNT_OF_ROUDS
+from brain_games.consts import AMOUNT_OF_ROUDS
 
 
 def run_game(rules, get_answer_and_question):
@@ -14,13 +14,13 @@ def run_game(rules, get_answer_and_question):
 
         if user_answer == correct_answer:
             print('Correct!')
+            count += 1
         else:
             print(f'"{user_answer}" '
                   ' is wrong answer ;(. Correct answer was '
                   f'"{correct_answer}".\n'
                   f'Let\'s try again, {name}!')
-            count = 1
             break
 
-    if count == 1:
+    if count == 3:
         print(f'Congratulations, {name}!')
