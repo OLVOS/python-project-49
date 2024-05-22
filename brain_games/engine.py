@@ -1,5 +1,5 @@
 import prompt
-from consts import AMOUNT_OF_ROUDS
+from brain_games.consts import AMOUNT_OF_ROUDS
 
 
 def run_game(rules, get_answer_and_question):
