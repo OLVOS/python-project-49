@@ -5,7 +5,7 @@ from brain_games.consts import AMOUNT_OF_ROUDS
 def run_game(rules, get_answer_and_question):
     name = prompt.string('Welcome to the Brain Games!\n'
                          'May I have your name? ')
-    print(f'Hello, {name}!\n', rules)
+    print(f'Hello, {name}!', f'\n{rules}')
 
     for i in range(AMOUNT_OF_ROUDS):
         question, correct_answer = get_answer_and_question()
