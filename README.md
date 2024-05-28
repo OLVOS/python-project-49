@@ -40,13 +40,13 @@ brain-prime
 ___
 
 # asciinema:
-### asciinema проекта hexlet-code-0.2.981 (brain-even)
-[![asciicast](https://asciinema.org/a/QSe1bl80MHzO0TVVpP1Mhbubs.svg)](https://asciinema.org/a/QSe1bl80MHzO0TVVpP1Mhbubs)
-### asciinema проекта hexlet-code-0.2.981 (brain-calc)
-[![asciicast](https://asciinema.org/a/ab4T2UH865mRnXof4ct6tOjXe.svg)](https://asciinema.org/a/ab4T2UH865mRnXof4ct6tOjXe)
-### asciinema проекта hexlet-code-0.2.981 (brain-gcd)
-[![asciicast](https://asciinema.org/a/vUOC2yTjRnf3DGR5rZI5QmGh1.svg)](https://asciinema.org/a/vUOC2yTjRnf3DGR5rZI5QmGh1)
-### asciinema проекта hexlet-code-0.2.981 (brain-progression)
-[![asciicast](https://asciinema.org/a/TC16rAYv6RISokZITFp6S9qkm.svg)](https://asciinema.org/a/TC16rAYv6RISokZITFp6S9qkm)
-### asciinema проекта hexlet-code-0.2.981 (brain-prime)
-[![asciicast](https://asciinema.org/a/9rM5tbPF5zcyNbJObIioerDIR.svg)](https://asciinema.org/a/9rM5tbPF5zcyNbJObIioerDIR)
+### asciinema проекта hexlet-code-0.3 (brain-even)
+[![asciicast](https://asciinema.org/a/QmmMpYDE12MIQ2NpLXIaapkCj.svg)](https://asciinema.org/a/QmmMpYDE12MIQ2NpLXIaapkCj)
+### asciinema проекта hexlet-code-0.3 (brain-calc)
+[![asciicast](https://asciinema.org/a/GoGnJISPMgvS326t8YY0hpwzL.svg)](https://asciinema.org/a/GoGnJISPMgvS326t8YY0hpwzL)
+### asciinema проекта hexlet-code-0.3 (brain-gcd)
+[![asciicast](https://asciinema.org/a/fXRLdxKn7CiVSAUYD2kfo832W.svg)](https://asciinema.org/a/fXRLdxKn7CiVSAUYD2kfo832W)
+### asciinema проекта hexlet-code-0.3 (brain-progression)
+[![asciicast](https://asciinema.org/a/LUdyTfFHsMqAOwAu9zMoBF0TQ.svg)]https://asciinema.org/a/LUdyTfFHsMqAOwAu9zMoBF0TQ)
+### asciinema проекта hexlet-code-0.3 (brain-prime)
+[![asciicast](https://asciinema.org/a/TSqXgpkX1pAxQX427FipdpeMK.svg)](https://asciinema.org/a/TSqXgpkX1pAxQX427FipdpeMK)
