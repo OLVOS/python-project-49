@@ -1,11 +1,11 @@
 
 
 #Hexlet сказал:
-#
+##
 install:
 	poetry install
 
-build: check
+build:
 	poetry build
 
 publish:
@@ -14,20 +14,16 @@ publish:
 package-install:
 	python3 -m pip install --user dist/*.whl
 
-#
-test:
-	poetry run pytest
+package-reinstall:
+	 python3 -m pip install  --force-reinstall dist/*.whl
 
-test-coverage:
-	poetry run pytest --cov=hexlet_python_package --cov-report xml
 
+##
 lint:
 	poetry run flake8 brain_games
 
-selfcheck:
-	poetry check
 
 #my make:
-#
+##
 brain-games:
 	poetry run brain-games

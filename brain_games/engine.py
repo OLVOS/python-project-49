@@ -1,5 +1,5 @@
 import prompt
-from brain_games.consts import AMOUNT_OF_ROUDS
+from brain_games.consts import AMOUNT_OF_ROUNDS
 
 
 def run_game(rules, get_answer_and_question):
@@ -7,10 +7,10 @@ def run_game(rules, get_answer_and_question):
                          'May I have your name? ')
     print(f'Hello, {name}!', f'\n{rules}')
 
-    for i in range(AMOUNT_OF_ROUDS):
+    for _ in range(AMOUNT_OF_ROUNDS):
         question, correct_answer = get_answer_and_question()
         print('Question:', question)
-        user_answer = prompt.string('Answer: ')
+        user_answer = prompt.string('Your answer: ')
 
         if user_answer == correct_answer:
             print('Correct!')

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.3"
+version = "0.3.1"
 description = "5 элементарных игр для твоего мозга"
 authors = [
     "OLVOS <anhkrem@gmail.com>",
@@ -8,32 +8,20 @@ authors = [
 readme = "README.md"
 repository = "https://github.com/OLVOS/python-project-49"
 
+
 packages = [
     { include = "brain_games" },
 ]
 
-classifiers = [
-    "Development Status :: 4 - Beta",
-    "Environment :: Console",
-    "Intended Audience :: End Users/Desktop",
-    #"License :: OSI Approved :: Python Software Foundation License", ?
-    "Operating System :: POSIX",
-    "Programming Language :: Python",
-    "Topic :: Games/Entertainment :: Puzzle Games"
-]
-
-[tool.poetry.urls]
-#доп свяь с автором:
-"tg" = "https://t.me/olwos"
-"vk" = "https://vk.com/olvos"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 prompt = "^0.4.1"
 
+
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.0.0"
 flake8 = "^7.0.0"
+
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_game:main"
@@ -44,7 +32,6 @@ brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
 
-brain-games-run = "brain_games.games.run_brain_games:run"
 
 [build-system]
 requires = ["poetry-core"]
