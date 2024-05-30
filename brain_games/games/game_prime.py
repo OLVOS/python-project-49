@@ -13,7 +13,7 @@ def is_prime(num):
 
 def get_num_and_prime_status():
     num = get_rnd_num()
-    answer = True if is_prime(num) else False
+    answer = "yes" if is_prime(num) else "no"
     return num, answer
 
 
