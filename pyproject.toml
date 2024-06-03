@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.3.1"
+version = "0.3.41"
 description = "5 элементарных игр для твоего мозга"
 authors = [
     "OLVOS <anhkrem@gmail.com>",
