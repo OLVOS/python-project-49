@@ -40,13 +40,13 @@ brain-prime
 ___
 
 # asciinema:
-### asciinema проекта hexlet-code-0.3 (brain-even)
+### brain-even
 [![asciicast](https://asciinema.org/a/QmmMpYDE12MIQ2NpLXIaapkCj.svg)](https://asciinema.org/a/QmmMpYDE12MIQ2NpLXIaapkCj)
-### asciinema проекта hexlet-code-0.3 (brain-calc)
+### brain-calc
 [![asciicast](https://asciinema.org/a/GoGnJISPMgvS326t8YY0hpwzL.svg)](https://asciinema.org/a/GoGnJISPMgvS326t8YY0hpwzL)
-### asciinema проекта hexlet-code-0.3 (brain-gcd)
+### brain-gcd
 [![asciicast](https://asciinema.org/a/fXRLdxKn7CiVSAUYD2kfo832W.svg)](https://asciinema.org/a/fXRLdxKn7CiVSAUYD2kfo832W)
-### asciinema проекта hexlet-code-0.3 (brain-progression)
+### brain-progression
 [![asciicast](https://asciinema.org/a/LUdyTfFHsMqAOwAu9zMoBF0TQ.svg)]https://asciinema.org/a/LUdyTfFHsMqAOwAu9zMoBF0TQ)
-### asciinema проекта hexlet-code-0.3 (brain-prime)
+### brain-prime
 [![asciicast](https://asciinema.org/a/TSqXgpkX1pAxQX427FipdpeMK.svg)](https://asciinema.org/a/TSqXgpkX1pAxQX427FipdpeMK)
