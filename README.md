@@ -60,6 +60,14 @@ brain-progression
 ```
 brain-prime
 ```
+
+---
+# Связь с автором
+> по всем вопросам писать сюда:
+```
+https://t.me/olwos
+```
+
 ___
 
 # asciinema:
